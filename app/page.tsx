@@ -265,10 +265,15 @@ export default function ProofPostLanding() {
     </div>
   );
 }
-
 /* Helper Components */
 
-function TechPoint({ icon, title, desc }) {
+interface TechPointProps {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}
+
+function TechPoint({ icon, title, desc }: TechPointProps) {
   return (
     <div className="flex gap-4">
       <div className="mt-1 flex-shrink-0 w-8 h-8 bg-white/5 rounded-xl flex items-center justify-center border border-white/5">
@@ -282,7 +287,12 @@ function TechPoint({ icon, title, desc }) {
   );
 }
 
-function StatBox({ label, val }) {
+interface StatBoxProps {
+  label: string;
+  val: string;
+}
+
+function StatBox({ label, val }: StatBoxProps) {
   return (
     <div className="p-8 bg-zinc-900/50 border border-white/5 rounded-3xl text-center">
       <p className="text-[10px] font-black uppercase text-zinc-600 tracking-widest mb-2">
@@ -293,7 +303,13 @@ function StatBox({ label, val }) {
   );
 }
 
-function FeatureCard({ icon, title, desc }) {
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}
+
+function FeatureCard({ icon, title, desc }: FeatureCardProps) {
   return (
     <div className="p-6 bg-zinc-900/40 border border-white/5 rounded-[2rem] hover:border-white/10 transition-all">
       <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center mb-5">
@@ -305,7 +321,12 @@ function FeatureCard({ icon, title, desc }) {
   );
 }
 
-function MiniStatus({ title, desc }) {
+interface MiniStatusProps {
+  title: string;
+  desc: string;
+}
+
+function MiniStatus({ title, desc }: MiniStatusProps) {
   return (
     <div className="p-6 bg-zinc-900/40 border border-white/5 rounded-[2rem]">
       <h3 className="text-white font-bold mb-2">{title}</h3>
