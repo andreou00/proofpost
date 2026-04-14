@@ -47,7 +47,7 @@
 //                   </span>
 //                 </div>
 //               </div>
-//             </div>
+//             </div> 
 
 //             <div className="text-right">
 //               <p className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-1">Total Earned</p>
